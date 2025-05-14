@@ -6,5 +6,5 @@ I was very fortunate to be advised by [Prof. Hao Su](https://cseweb.ucsd.edu/~ha
 
 You can find my CV here: [XX's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
-[Email](hzddltql@gmail.com) / [Wechat](../images/wechat.jpg) / 
+[Email](hzddltql@gmail.com) / [Wechat](../images/wechat.jpeg) / 
 
