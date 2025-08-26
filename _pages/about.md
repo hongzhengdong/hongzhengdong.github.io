@@ -13,7 +13,7 @@ I'm passionate about Robotics. My research lies in the areas of robotic dexterou
 
 I was very fortunate to be advised by [Prof. Hao Su](https://cseweb.ucsd.edu/~haosu/) of Su Lab from [School of Computer Science](https://cs.pku.edu.cn/) from 2023 to 2024, where I was a research scholar and a junior specialist. I built 3 complete robotic systems for Su Lab (including hardware, control and simulation), and successfully lead 2 firt-author projects which have been published (IROS 2024) or submiited to (CoRL 2025) top robotic conferences.
 
-You can find my CV here: [Zhengdong Hong's Curriculum Vitae](../assets/ZhengdongHongCV_514.pdf).
+You can find my CV here: [Zhengdong Hong's Curriculum Vitae](../assets/ZhengdongHongCV_versions.pdf).
 
 [Email](hzddltql@gmail.com) / [Wechat](../images/wechat.jpeg) / 
 
