@@ -13,7 +13,7 @@ I'm passionate about System Designs. My research lies in the areas of robotic de
 
 I was very fortunate to be advised by [Prof. Hao Su](https://cseweb.ucsd.edu/~haosu/) of Su Lab from [School of Computer Science](https://cs.pku.edu.cn/) from 2023 to 2024, where I was a research scholar and a junior specialist. I built 3 complete systems for Su Lab (including hardware, control and simulation), and successfully lead 2 firt-author projects which have been published (IROS 2024) or presented at (RSS 2025) conferences.
 
-You can find my CV here: [Zhengdong Hong's Curriculum Vitae](../assets/ZhengdongHongCV_versions.pdf).
+You can find my CV here: [Zhengdong Hong's Curriculum Vitae](../assets/ZhengdongHongCV_Dec2025.pdf).
 
 [Email](hzddltql@gmail.com) / [Wechat](../images/wechat.jpeg) / 
 
