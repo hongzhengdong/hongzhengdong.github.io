@@ -15,5 +15,5 @@ I was very fortunate to be advised by [Prof. Hao Su](https://cseweb.ucsd.edu/~ha
 
 You can find my CV here: [Zhengdong Hong's Curriculum Vitae](../assets/ZhengdongHongCV_Dec2025.pdf).
 
-[Email](hzddltql@gmail.com) / [Wechat](../images/wechat.jpeg) / [QQ](../qq.jpeg)
+[Email](hzddltql@gmail.com) / [Wechat](../wechat.jpeg) / [QQ](../qq.jpeg)
 
