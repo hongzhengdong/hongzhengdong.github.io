@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a fourth-year PhD student from [College of Computer Science](http://www.en.cs.zju.edu.cn/), [Zhejiang University](https://www.zju.edu.cn/english/), advised by Prof. [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/). Prior to that, I earned my bachelor's degree from the School of Electrical Engineering at [Zhejiang University](https://www.zju.edu.cn/english/), where I get a deep understanding of analog circuit design and embedded system design, and won the championship in 8th Texas Instrument (TI) Electronic Design Competition (Ranking: 1/1847, Highest Award).
+I'm a final-year PhD student from [College of Computer Science](http://www.en.cs.zju.edu.cn/), [Zhejiang University](https://www.zju.edu.cn/english/), advised by Prof. [Guofeng Zhang](http://www.cad.zju.edu.cn/home/gfzhang/). Prior to that, I earned my bachelor's degree from the School of Electrical Engineering at [Zhejiang University](https://www.zju.edu.cn/english/), where I get a deep understanding of analog circuit design and embedded system design, and won the championship in 8th Texas Instrument (TI) Electronic Design Competition (Ranking: 1/1847, Highest Award).
 
 I'm passionate about System Designs. My research lies in the areas of hardware and system design. Additionally, I am interested in the creation of lifelike simulation environments and the transfer of policies, trained in these simulation contexts, to real-world hardware.
 
