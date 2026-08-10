@@ -289,7 +289,7 @@ img { max-width: 100%; }
 /* Sections                                                    */
 /* ---------------------------------------------------------- */
 
-section { margin: 0 0 74px; }
+section { margin: 0 0 46px; }
 
 .sec-title {
   display: flex;
@@ -747,6 +747,15 @@ details.tldr p { margin: 5px 0 0; font-size: 0.87rem; color: var(--text-soft); l
   text-align: center;
 }
 .footer a { color: var(--text-soft); }
+
+.footer .closing {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  max-width: 640px;
+  margin: 0 auto 18px;
+  line-height: 1.7;
+}
 
 /* ---------------------------------------------------------- */
 /* Reveal-on-scroll                                            */
