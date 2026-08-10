@@ -688,6 +688,7 @@ details.tldr p { margin: 5px 0 0; font-size: 0.87rem; color: var(--text-soft); l
   justify-content: center;
 }
 .xp-logo img { max-width: 74px; max-height: 56px; object-fit: contain; display: block; }
+.xp-logo img.seal { width: 52px; height: 52px; border-radius: 50%; background: #fff; }
 .logo-chip {
   font-family: var(--mono);
   font-size: 0.82rem;
