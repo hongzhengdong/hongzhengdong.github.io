@@ -140,8 +140,8 @@
   /* ---------- console easter egg ---------- */
   try {
     console.log(
-      "%c$ whoami\n%cZhengdong Hong — I build robots end-to-end: from PCB to policy.\n" +
-      "%c$ contact\n%chzddltql@gmail.com",
+      "%c/whoami\n%cZhengdong Hong — I work on full-stack robotics: from hardware to policy.\n" +
+      "%c/contact\n%chzddltql@gmail.com",
       "color:#015cab;font-family:monospace;font-weight:bold",
       "font-family:monospace",
       "color:#015cab;font-family:monospace;font-weight:bold",

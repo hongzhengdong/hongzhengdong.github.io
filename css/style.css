@@ -265,6 +265,26 @@ img { max-width: 100%; }
   letter-spacing: 0.1em;
 }
 
+/* SKL/06 — clickable document teaser */
+.doc-tease a { display: block; position: relative; color: inherit; }
+.doc-tease a:hover { text-decoration: none; }
+.doc-tease-overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 40px 11px 10px;
+  background: linear-gradient(180deg, transparent, rgba(10, 14, 20, 0.9) 62%);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  line-height: 1.55;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.doc-tease-overlay b { font-size: 0.7rem; letter-spacing: 0.02em; }
+.doc-tease-overlay em { font-style: normal; font-weight: 700; color: #8ec4f4; }
+.doc-tease a:hover .doc-tease-overlay em { text-decoration: underline; text-underline-offset: 3px; }
+
 /* ---------------------------------------------------------- */
 /* Sections                                                    */
 /* ---------------------------------------------------------- */
@@ -356,6 +376,14 @@ section { margin: 0 0 74px; }
   transition: background 0.2s, color 0.2s;
 }
 .hero-links a:hover { background: var(--accent); color: #fff; text-decoration: none; }
+
+.hero-links a.cv-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+.hero-links a.cv-primary:hover { filter: brightness(1.12); }
 
 .bio p { margin: 0 0 14px; }
 .bio .hl { background: linear-gradient(transparent 62%, var(--accent-soft) 62%); font-weight: 600; color: var(--text); }
