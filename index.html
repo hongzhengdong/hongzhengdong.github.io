@@ -52,7 +52,7 @@
   <!-- ═══════════ left rail · robot systems ═══════════ -->
   <aside class="rail" id="rail-left" aria-label="Robot systems photo rail">
     <div class="rail-track">
-      <p class="rail-head">robot systems — built · deployed · integrated</p>
+      <p class="rail-head">robot systems — built</p>
       <figure>
         <img src="assets/img/rail/sys-01-mobile-manip.jpg" alt="Mobile manipulator: xArm with Ability Hand on a mobile base, fully onboard power" loading="lazy">
         <figcaption><span class="idx">SYS/01</span>mobile manipulator — xArm + Ability Hand, fully onboard power · built in 3 days</figcaption>
@@ -219,7 +219,7 @@
         <li><span class="d">2025.10</span><span><a href="https://zenglingqi647.github.io/AdaDexGrasp/" target="_blank" rel="noopener">AdaDexGrasp</a> presented as an <b>Oral</b> at IROS 2025, Hangzhou.</span></li>
         <li><span class="d">2025.06</span><span>Particle-based world model paper: <b>Oral</b> at the RSS 2025 Dexterous Manipulation workshop.</span></li>
         <li><span class="d">2024.10</span><span><a href="https://ootts.github.io/easyhec_plus/" target="_blank" rel="noopener">EasyHeC++</a> presented as an <b>Oral</b> at IROS 2024.</span></li>
-        <li><span class="d">2024.07</span><span>Sole-author paper on free-viewpoint video of outdoor sports accepted to ECCV 2024.</span></li>
+        <li><span class="d">2024.07</span><span>Paper on free-viewpoint video of outdoor sports accepted to ECCV 2024.</span></li>
       </ul>
     </section>
 
@@ -323,25 +323,6 @@
       </div>
 
       <div class="pub reveal">
-        <a class="pub-thumb" href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">
-          <img src="assets/img/pubs/aerialrecon-teaser.jpg" alt="A flying camera spiraling around a sprinting athlete on a track, with camera frusta marking captured viewpoints" loading="lazy">
-        </a>
-        <div>
-          <h3 class="pub-title"><a href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">Free-Viewpoint Video of Outdoor Sports Using a Flying Camera</a></h3>
-          <p class="pub-authors"><span class="me">Zhengdong Hong</span> — sole author</p>
-          <div class="badges"><span class="badge">ECCV 2024</span></div>
-          <div class="pub-links">
-            <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02178.pdf" target="_blank" rel="noopener">paper</a>
-            <a href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">project</a>
-            <a href="https://youtu.be/JF-cQjc_sv4" target="_blank" rel="noopener">video</a>
-          </div>
-          <details class="tldr"><summary>TL;DR</summary>
-            <p>A drone with a single RGB camera reconstructs the 4D dynamic athlete together with the unbounded 360° scene, enabling free-viewpoint replay of real outdoor sports — plus the new AerialRecon dataset. Conceived, built, and written solo.</p>
-          </details>
-        </div>
-      </div>
-
-      <div class="pub reveal">
         <a class="pub-thumb" href="https://ootts.github.io/easyhec_plus/" target="_blank" rel="noopener">
           <img src="assets/img/pubs/easyhec-pipeline.jpg" alt="EasyHeC++ pipeline: sampling and feature-matching pose initialization, then differentiable-rendering pose optimization with AutoSAM, maintaining an image-pose database across calibrations" loading="lazy">
         </a>
@@ -359,14 +340,33 @@
           </details>
         </div>
       </div>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">
+          <img src="assets/img/pubs/aerialrecon-teaser.jpg" alt="A flying camera spiraling around a sprinting athlete on a track, with camera frusta marking captured viewpoints" loading="lazy">
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">Free-Viewpoint Video of Outdoor Sports Using a Flying Camera</a></h3>
+          <p class="pub-authors"><span class="me">Zhengdong Hong</span> — sole author</p>
+          <div class="badges"><span class="badge">ECCV 2024</span></div>
+          <div class="pub-links">
+            <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02178.pdf" target="_blank" rel="noopener">paper</a>
+            <a href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">project</a>
+            <a href="https://youtu.be/JF-cQjc_sv4" target="_blank" rel="noopener">video</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>A drone with a single RGB camera reconstructs the 4D dynamic athlete together with the unbounded 360° scene, enabling free-viewpoint replay of real outdoor sports — plus the new AerialRecon dataset. Conceived, built, and written solo.</p>
+          </details>
+        </div>
+      </div>
     </section>
 
     <!-- 05 · robot systems -->
     <section id="systems">
       <h2 class="sec-title reveal"><span class="no">04</span>Robot Systems</h2>
       <p class="sec-sub reveal">
-        I don't just use robots — I build and deploy them. Most recently at Amazon FAR I took a wheeled
-        humanoid from bring-up to an end-to-end autonomous demo; before that, at Su Lab (UCSD), I designed
+        I don't just use robots — I build infrastructure and deploy them. Most recently at Amazon FAR I took a wheeled
+        humanoid from bring-up to an end-to-end autonomous system; before that, at Su Lab (UCSD), I designed
         and assembled the lab's manipulation platforms from bare aluminum up: mechanics, power, electronics,
         firmware, drivers, calibration, teleoperation, and the data-collection stack. Photos on the left rail ◀
       </p>
@@ -380,7 +380,7 @@
             <b>Dexmate Vega Pro</b>: LiDAR–camera fused mapping with open-vocabulary object-goal navigation,
             whole-body IK and compliance control, and autonomous grasping — every motion verified
             collision-free in simulation before it touches the robot, and the full pipeline running onboard.
-            From bare-metal bring-up (grippers, wrist camera, power &amp; comms) to the end-to-end demo.
+            From bare-metal bring-up (grippers, wrist camera, power &amp; comms) to the end-to-end system.
           </p>
         </div>
         <div class="spotlight-img">
@@ -456,7 +456,7 @@
     <section id="hardware">
       <h2 class="sec-title reveal"><span class="no">05</span>Hardware</h2>
       <p class="sec-sub reveal">
-        Before robots, there were electrons. Four years of the EE Excellence Program — six days a week in
+        Before robots, there was electrical design. Four years of the EE Excellence Program — six days a week in
         the hardware lab — left me with an analog-deep understanding of circuits, power, and motors that I
         now aim at sim-to-real. Photos on the right rail ▶
       </p>
