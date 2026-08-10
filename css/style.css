@@ -621,6 +621,18 @@ details.tldr p { margin: 5px 0 0; font-size: 0.87rem; color: var(--text-soft); l
 }
 .spotlight-title { font-size: 1.15rem; font-weight: 800; margin: 0 0 8px; line-height: 1.35; }
 .spotlight-text { font-size: 0.9rem; color: var(--text-soft); margin: 0; line-height: 1.6; }
+.spotlight-links { margin: 12px 0 0; }
+.spotlight-links a {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 3px 9px;
+}
+.spotlight-links a:hover { border-color: var(--accent-border); background: var(--accent-soft); text-decoration: none; }
+
 .spotlight-img { position: relative; min-height: 180px; }
 .spotlight-img img {
   position: absolute; inset: 0;
