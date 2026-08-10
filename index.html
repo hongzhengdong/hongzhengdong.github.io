@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhengdong Hong · 洪郑栋 — Full-stack Roboticist</title>
+  <meta name="description" content="Zhengdong Hong — full-stack roboticist: robot learning × 3D vision × hardware. Ph.D. candidate at Zhejiang University (CAD&CG); Research Scientist Intern at Amazon Frontier AI & Robotics.">
+  <meta property="og:title" content="Zhengdong Hong — Full-stack Roboticist">
+  <meta property="og:description" content="I build robots end-to-end — from PCB to policy. Robot learning, 3D vision, and deep hardware.">
+  <meta property="og:image" content="https://hongzhengdong.github.io/assets/img/portrait.jpg">
+  <meta property="og:url" content="https://hongzhengdong.github.io/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    /* set theme before first paint */
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>.rail { overflow-y: auto; }</style></noscript>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      Zhengdong Hong
+      <span class="zh" id="zh-name" data-text="洪郑栋"></span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">about</a>
+      <a href="#news">news</a>
+      <a href="#publications">publications</a>
+      <a href="#systems">systems</a>
+      <a href="#hardware">hardware</a>
+      <a href="#experience">experience</a>
+      <a class="nav-cv" href="assets/ZhengdongHongCV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+  </div>
+</header>
+
+<div class="shell" id="top">
+
+  <!-- ═══════════ left rail · robot systems ═══════════ -->
+  <aside class="rail" id="rail-left" aria-label="Robot systems photo rail">
+    <div class="rail-track">
+      <p class="rail-head">robot systems — built &amp; fixed</p>
+      <figure>
+        <img src="assets/img/rail/sys-01-mobile-manip.jpg" alt="Mobile manipulator: xArm with Ability Hand on a mobile base, fully onboard power" loading="lazy">
+        <figcaption><span class="idx">SYS/01</span>mobile manipulator — xArm + Ability Hand, fully onboard power · built in 3 days</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/sys-02-dualhand.jpg" alt="Dual-arm dexterous cell with two xArm7 and Ability Hands in an aluminum frame" loading="lazy">
+        <figcaption><span class="idx">SYS/02</span>dual-arm dexterous cell — 2× xArm7 + Ability Hands · frame up in 2 days</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/sys-03-dualgripper.jpg" alt="Dual-gripper cell: two xArm7 with parallel grippers over a calibrated workspace" loading="lazy">
+        <figcaption><span class="idx">SYS/03</span>dual-gripper cell — calibrated multi-camera workspace · 2 days</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/sys-04-rig.jpg" alt="Data collection rig with camera array and manipulation props" loading="lazy">
+        <figcaption><span class="idx">SYS/04</span>data-collection rig — camera array, teleop-ready</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/sys-05-chassis.jpg" alt="Opened mobile base chassis: battery, motor drivers, Jetson, RealSense" loading="lazy">
+        <figcaption><span class="idx">SYS/05</span>mobile base, opened — LiFePO₄ · drivers · Jetson · RealSense. I wire these myself</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/sys-06-precision.jpg" alt="Steel ruler measuring an xArm7 base to correct a factory misalignment" loading="lazy">
+        <figcaption><span class="idx">SYS/06</span>correcting a factory-misaligned xArm7 — sub-mm, by hand</figcaption>
+      </figure>
+    </div>
+  </aside>
+
+  <!-- ═══════════ center column ═══════════ -->
+  <main class="main">
+
+    <!-- 01 · about -->
+    <section id="about">
+      <div class="hero reveal">
+        <div class="hero-photo">
+          <img src="assets/img/portrait.jpg" alt="Portrait of Zhengdong Hong">
+        </div>
+        <div class="hero-body">
+          <h1 class="hero-name">Zhengdong Hong<span class="zh-name">洪郑栋</span></h1>
+          <p class="hero-tagline"><span class="dim">$</span> whoami <span class="dim">→</span> I build robots end-to-end — from PCB to policy.</p>
+          <p class="hero-role">
+            Final-year Ph.D. student, <b>State Key Lab of CAD&amp;CG, Zhejiang University</b> (expected 2026)<br>
+            Research Scientist Intern, <b>Amazon Frontier AI &amp; Robotics</b> · San Francisco
+          </p>
+          <div class="hero-links">
+            <a href="mailto:hzddltql@gmail.com">email</a>
+            <a href="https://scholar.google.com/citations?user=ATsuK6IAAAAJ&hl=en" target="_blank" rel="noopener">google scholar</a>
+            <a href="https://github.com/hongzhengdong" target="_blank" rel="noopener">github</a>
+            <a href="assets/ZhengdongHongCV.pdf" target="_blank" rel="noopener">cv.pdf</a>
+            <a href="#contact">wechat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bio reveal">
+        <p>
+          I am a final-year Ph.D. student in Computer Science at the
+          <a href="http://www.cad.zju.edu.cn/english.html" target="_blank" rel="noopener">State Key Laboratory of CAD&amp;CG</a>,
+          Zhejiang University, advised by Prof.
+          <a href="http://www.cad.zju.edu.cn/home/gfzhang/" target="_blank" rel="noopener">Guofeng Zhang</a>.
+          I am currently a Research Scientist Intern at <b>Amazon Frontier AI &amp; Robotics</b> in San Francisco.
+          Before that, I spent 1.5 years in Prof. <a href="https://cseweb.ucsd.edu/~haosu/" target="_blank" rel="noopener">Hao Su</a>'s
+          lab at UC San Diego as a Junior Specialist / Research Scholar.
+        </p>
+        <p>
+          My research sits at the intersection of <span class="hl">robot manipulation learning</span> and
+          <span class="hl">3D vision</span>: I use 3D priors — geometry, object-centric motion, and
+          particle-based world models learned from humans — to help robots understand scenes and learn
+          manipulation. I started out in 3D computer vision (a sole-author ECCV paper on 4D reconstruction
+          from a flying camera) and moved into dexterous manipulation, world models, and sim-to-real.
+        </p>
+        <p>
+          What makes me different: <span class="hl">I build the robot before I train it.</span>
+          I did my B.Sc. in Electrical Engineering (rank 1/48) and won the national championship of the
+          TI Cup electronic design competition (1/1847) — so my foundations run down to analog circuits,
+          power electronics, motors, and embedded systems. I have built complete robot systems end-to-end
+          — mechanical design, power budgets, PCBs, firmware, drivers, calibration, teleoperation, and
+          data-collection pipelines — which means a brand-new robot can be learning-ready in days, not months.
+          And when a policy misbehaves in the real world, I can debug the whole stack: from the reward curve
+          down to a noisy RS-485 bus.
+        </p>
+        <p>
+          I came to robotics from 3D vision and stayed because it is the one field where everything I love —
+          algorithms, electrons, and mechanisms — has to work together. This is my life's work.
+        </p>
+        <blockquote class="term">
+          Hardware bugs are not as visible as software's. Signal is the clue.
+          <span class="who">— from my <a href="https://docs.google.com/document/d/1G0XCl3qhxFjbw7GRci1baJuRYO-daQAmSX9vOScSf6w/edit?usp=sharing" target="_blank" rel="noopener">hardware debugging field notes</a></span>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 02 · news -->
+    <section id="news" class="reveal">
+      <h2 class="sec-title"><span class="no">01</span>News</h2>
+      <ul class="news">
+        <li><span class="d">2026.05</span><span>Joined <b>Amazon Frontier AI &amp; Robotics</b> in San Francisco as a Research Scientist Intern.</span></li>
+        <li><span class="d">2026.04</span><span><a href="https://r3d-policy.github.io/" target="_blank" rel="noopener">R3D</a> and <a href="https://zju3dv.github.io/LAMP/" target="_blank" rel="noopener">LAMP</a> released on arXiv.</span></li>
+        <li><span class="d">2026.01</span><span>Presented <i>Object-Centric Motion Priors</i> as an <b>Oral</b> at AAAI 2026.</span></li>
+        <li><span class="d">2025.10</span><span><a href="https://zenglingqi647.github.io/AdaDexGrasp/" target="_blank" rel="noopener">AdaDexGrasp</a> presented as an <b>Oral</b> at IROS 2025, Hangzhou.</span></li>
+        <li><span class="d">2025.06</span><span>Particle-based world model paper: <b>Oral</b> at the RSS 2025 Dexterous Manipulation workshop.</span></li>
+        <li><span class="d">2024.10</span><span><a href="https://ootts.github.io/easyhec_plus/" target="_blank" rel="noopener">EasyHeC++</a> presented as an <b>Oral</b> at IROS 2024.</span></li>
+        <li><span class="d">2024.07</span><span>Sole-author paper on free-viewpoint video of outdoor sports accepted to ECCV 2024.</span></li>
+      </ul>
+    </section>
+
+    <!-- 03 · publications -->
+    <section id="publications">
+      <h2 class="sec-title reveal"><span class="no">02</span>Publications</h2>
+      <p class="legend reveal">* equal contribution · reverse chronological</p>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://r3d-policy.github.io/" target="_blank" rel="noopener">
+          <img src="assets/img/pubs/r3d.jpg" alt="R3D teaser" loading="lazy">
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://r3d-policy.github.io/" target="_blank" rel="noopener">R3D: Revisiting 3D Policy Learning</a></h3>
+          <p class="pub-authors"><span class="me">Zhengdong Hong</span>*, Shenrui Wu*, Haozhe Cui*, Boyi Zhao, Ran Ji, Yiyang He, Hangxing Zhang, Zundong Ke, Jun Wang, Guofeng Zhang, Jiayuan Gu</p>
+          <div class="badges"><span class="badge dim">arXiv 2026</span></div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2604.15281" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://r3d-policy.github.io/" target="_blank" rel="noopener">project</a>
+            <a href="https://github.com/Wushr-Lance/R3D-Policy" target="_blank" rel="noopener">code</a>
+            <a href="https://youtu.be/659pPYQWuqA" target="_blank" rel="noopener">video</a>
+            <a href="https://huggingface.co/datasets/eddie-cui/r3d" target="_blank" rel="noopener">dataset</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>Why does 3D policy learning fail to scale? We trace it to two root causes — BatchNorm and missing 3D data augmentation — and fix both with a scalable transformer 3D encoder plus a diffusion-transformer action decoder, outperforming SOTA across manipulation benchmarks.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://zju3dv.github.io/LAMP/" target="_blank" rel="noopener">
+          <video src="assets/img/pubs/lamp.mp4" poster="assets/img/pubs/lamp-poster.jpg" muted loop playsinline preload="none" data-autoplay></video>
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://zju3dv.github.io/LAMP/" target="_blank" rel="noopener">LAMP: Lift Image-Editing as General 3D Priors for Open-world Manipulation</a></h3>
+          <p class="pub-authors">Jingjing Wang, <span class="me">Zhengdong Hong</span>, Chong Bao, Yuke Zhu, Junhan Sun, Guofeng Zhang</p>
+          <div class="badges"><span class="badge dim">arXiv 2026</span></div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2604.08475" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://zju3dv.github.io/LAMP/" target="_blank" rel="noopener">project</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>Image-editing models carry implicit spatial knowledge. LAMP lifts these 2D editing cues into 3D inter-object transformations, yielding general 3D priors that enable fine-grained, open-world robotic manipulation.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://doi.org/10.1609/aaai.v40i22.38892" target="_blank" rel="noopener">
+          <img src="assets/img/pubs/motionpriors.png" alt="Object-centric motion priors poster" loading="lazy">
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://doi.org/10.1609/aaai.v40i22.38892" target="_blank" rel="noopener">Learning Object-Centric Motion Priors from Human for Robotic Dexterous Manipulation</a></h3>
+          <p class="pub-authors"><span class="me">Zhengdong Hong</span>, Guofeng Zhang</p>
+          <div class="badges"><span class="badge">AAAI 2026</span><span class="badge hot">Oral</span></div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1609/aaai.v40i22.38892" target="_blank" rel="noopener">paper</a>
+            <a href="https://underline.io/lecture/140328-learning-object-centric-motion-priors-from-human-for-robotic-dexterous-manipulation" target="_blank" rel="noopener">talk</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>Learns object-centric motion priors from human hand-object interaction data by predicting future hand-object states; the priors serve as reward signals for RL — removing manual task-specific reward engineering and transferring across different robot hands, in sim and real.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://youtu.be/yQLj3F0s3iI" target="_blank" rel="noopener">
+          <img src="assets/img/pubs/dexworld.jpg" alt="Particle-based world model video thumbnail" loading="lazy">
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://youtu.be/yQLj3F0s3iI" target="_blank" rel="noopener">Learning Particle-based World Model from Human for Dexterous Manipulation</a></h3>
+          <p class="pub-authors"><span class="me">Zhengdong Hong</span>*, Yulin Liu*, Haowen Hou, Bo Ai, Jun Wang, Tongzhou Mu, Yuzhe Qin, Jiayuan Gu, Hao Su</p>
+          <div class="badges"><span class="badge">RSS 2025 · Dexterous Manipulation WS</span><span class="badge hot">Oral</span></div>
+          <div class="pub-links">
+            <a href="https://dex-manipulation.github.io/rss2025/" target="_blank" rel="noopener">venue</a>
+            <a href="https://github.com/hongzhengdong/DexWorld" target="_blank" rel="noopener">code</a>
+            <a href="https://youtu.be/yQLj3F0s3iI" target="_blank" rel="noopener">video</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>First to learn a particle-based 3D world model from human hand-object interaction; MPC generates high-level trajectories that guide RL in simulation for sample-efficient, sim-to-real-transferable dexterous manipulation.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://zenglingqi647.github.io/AdaDexGrasp/" target="_blank" rel="noopener">
+          <img src="assets/img/pubs/adadexgrasp.png" alt="AdaDexGrasp pre-grasp and final grasp states" loading="lazy">
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://zenglingqi647.github.io/AdaDexGrasp/" target="_blank" rel="noopener">Learning Adaptive Dexterous Grasping from Single Demonstrations</a></h3>
+          <p class="pub-authors">Liangzhi Shi, Yulin Liu, Lingqi Zeng, Bo Ai, <span class="me">Zhengdong Hong</span>, Hao Su</p>
+          <div class="badges"><span class="badge">IROS 2025</span><span class="badge hot">Oral</span></div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2503.20208" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://zenglingqi647.github.io/AdaDexGrasp/" target="_blank" rel="noopener">project</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>AdaDexGrasp learns a library of dexterous grasping skills from a single human demonstration each — trajectory-following RL rewards plus a pose curriculum — and a VLM selects the right skill from user instructions at deployment.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">
+          <img src="assets/img/pubs/aerialrecon.jpg" alt="Free-viewpoint video of outdoor sports teaser" loading="lazy">
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">Free-Viewpoint Video of Outdoor Sports Using a Flying Camera</a></h3>
+          <p class="pub-authors"><span class="me">Zhengdong Hong</span> — sole author</p>
+          <div class="badges"><span class="badge">ECCV 2024</span><span class="badge hot">Single-author</span></div>
+          <div class="pub-links">
+            <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02178.pdf" target="_blank" rel="noopener">paper</a>
+            <a href="https://hongzhengdong.github.io/AerialRecon.github.io/" target="_blank" rel="noopener">project</a>
+            <a href="https://youtu.be/JF-cQjc_sv4" target="_blank" rel="noopener">video</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>A drone with a single RGB camera reconstructs the 4D dynamic athlete together with the unbounded 360° scene, enabling free-viewpoint replay of real outdoor sports — plus the new AerialRecon dataset. Conceived, built, and written solo.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="pub reveal">
+        <a class="pub-thumb" href="https://ootts.github.io/easyhec_plus/" target="_blank" rel="noopener">
+          <img src="assets/img/pubs/easyhec.png" alt="EasyHeC++ teaser" loading="lazy">
+        </a>
+        <div>
+          <h3 class="pub-title"><a href="https://ootts.github.io/easyhec_plus/" target="_blank" rel="noopener">EasyHeC++: Fully Automatic Hand-Eye Calibration with Pretrained Image Models</a></h3>
+          <p class="pub-authors"><span class="me">Zhengdong Hong</span>*, Kangfu Zheng*, Linghao Chen</p>
+          <div class="badges"><span class="badge">IROS 2024</span><span class="badge hot">Oral</span></div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2410.09293" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://ootts.github.io/easyhec_plus/" target="_blank" rel="noopener">project</a>
+            <a href="https://github.com/ootts/EasyHeC" target="_blank" rel="noopener">code</a>
+          </div>
+          <details class="tldr"><summary>TL;DR</summary>
+            <p>Marker-free, training-free, fully automatic hand-eye calibration for any robot arm: pretrained-image-model feature matching initializes the camera pose, and differentiable rendering refines it.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · robot systems -->
+    <section id="systems">
+      <h2 class="sec-title reveal"><span class="no">03</span>Robot Systems</h2>
+      <p class="sec-sub reveal">
+        I don't just use robots — I build them. At Su Lab (UCSD) I designed and assembled the lab's
+        manipulation platforms from bare aluminum up: mechanics, power, electronics, firmware, drivers,
+        calibration, teleoperation, and the data-collection stack. Photos on the left rail ◀
+      </p>
+
+      <div class="sys-grid reveal">
+        <div class="sys-card">
+          <div class="sys-body">
+            <div class="sys-name">Mobile Manipulator</div>
+            <div class="sys-desc">Su Lab's first mobile manipulator: xArm + Ability Hand on a mobile base with <b>fully onboard power</b> — no external lines, engineered within a strict battery budget.</div>
+            <ul class="sys-specs">
+              <li>base · arm · dexterous hand</li>
+              <li>onboard 24 V power system</li>
+            </ul>
+            <span class="sys-stat">⏱ built in 3 days</span>
+          </div>
+        </div>
+        <div class="sys-card">
+          <div class="sys-body">
+            <div class="sys-name">Dual-Arm Dexterous Cell</div>
+            <div class="sys-desc">2× xArm7 + 2× Ability Hands for articulated-object manipulation; multi-camera array, calibrated end-to-end (EasyHeC++ grew out of this).</div>
+            <ul class="sys-specs">
+              <li>aluminum cell + camera array</li>
+              <li>teleop + data collection ready</li>
+            </ul>
+            <span class="sys-stat">⏱ frame up in 2 days</span>
+          </div>
+        </div>
+        <div class="sys-card">
+          <div class="sys-body">
+            <div class="sys-name">Dual-Gripper Cell</div>
+            <div class="sys-desc">Twin xArm7 with parallel grippers over a calibrated workspace — the lab's workhorse for bimanual data collection and policy evaluation.</div>
+            <ul class="sys-specs">
+              <li>bimanual manipulation</li>
+              <li>multi-view cameras, ArUco-boarded</li>
+            </ul>
+            <span class="sys-stat">⏱ frame up in 2 days</span>
+          </div>
+        </div>
+      </div>
+
+      <ul class="infra-list reveal">
+        <li><b>Robot infrastructure, per model.</b> For every robot I work with, I write the full stack it needs for learning research: drivers, calibration, teleoperation, data collection, and deployment.</li>
+        <li><b>Lab hardware lead (Su Lab, since Nov 2023).</b> Fixed two broken xArm control boxes and a broken xArm7; corrected a factory misalignment with a steel ruler and patience; ran hardware training and the rental/maintenance workflow.</li>
+        <li><b>Power &amp; signal debugging.</b> Worked out the Ability Hand power budget (7.4 V/14 A hand vs. a shared 24 V/16.5 A supply — clenching while lifting browns out), and traced its RS-485 dropouts to interference from the external supply. Fixed in the analog domain.</li>
+        <li><b>Wrote the manuals.</b> Authored the lab's <a href="https://docs.google.com/document/d/1G0XCl3qhxFjbw7GRci1baJuRYO-daQAmSX9vOScSf6w/edit?usp=sharing" target="_blank" rel="noopener">Electronic Fabrication User Guidance &amp; debugging field notes</a> used to onboard new members.</li>
+      </ul>
+
+      <div class="fleet reveal">
+        <p class="fleet-label">fleet — hardware I've built infrastructure for</p>
+        <div class="fleet-chips">
+          <span class="chip">xArm7</span>
+          <span class="chip">Ability Hand</span>
+          <span class="chip">parallel grippers</span>
+          <span class="chip">custom mobile bases</span>
+          <span class="chip">RealSense</span>
+          <span class="chip">Jetson</span>
+          <span class="chip">C2000 DSP</span>
+          <span class="chip">STM32 / MSP430</span>
+          <span class="chip">FPGA (MAX10)</span>
+          <span class="chip">…the next one</span>
+        </div>
+      </div>
+
+      <p class="fieldnotes reveal">Full build log with photos: <a href="https://docs.google.com/presentation/d/1EKVSUzFWQWw0W3wbSrBfOCuisdwXMedv2i1jPPH3Tmc/edit?usp=sharing" target="_blank" rel="noopener">robot systems deck ↗</a></p>
+    </section>
+
+    <!-- 05 · hardware -->
+    <section id="hardware">
+      <h2 class="sec-title reveal"><span class="no">04</span>Hardware</h2>
+      <p class="sec-sub reveal">
+        Before robots, there were electrons. Four years of the EE Excellence Program — six days a week in
+        the hardware lab — left me with an analog-deep understanding of circuits, power, and motors that I
+        now aim at sim-to-real. Photos on the right rail ▶
+      </p>
+
+      <div class="spotlight reveal">
+        <div class="spotlight-body">
+          <p class="spotlight-kicker">highest award · national championship</p>
+          <h3 class="spotlight-title">TI Cup — 8th Texas Instruments National Undergraduate Electronic Design Competition</h3>
+          <p class="spotlight-text">
+            We designed, built, and validated an <b>Amplifier Nonlinear Harmonic Distortion Analysis System</b>
+            in 4 days and 3 nights — and took the TI Cup, the competition's single highest award.
+            I led the team through the full design and evaluation.
+          </p>
+        </div>
+        <div class="spotlight-stat">
+          <span class="big">1 / 1847</span>
+          <span class="small">national rank · Nov 2020</span>
+          <span class="big" style="font-size:1.15rem">4 days · 3 nights</span>
+          <span class="small">idea → working instrument</span>
+        </div>
+      </div>
+
+      <div class="hw-grid reveal">
+        <div class="hw-card">
+          <span class="hw-year">2020</span>
+          <div class="hw-name">Dual-Loop 12 V/5 A DC-DC Buck Converter</div>
+          <p class="hw-desc">8×5 cm custom PCB, DSP-controlled (C2000). Schematic → layout → bring-up → scope validation, all mine.</p>
+          <div class="hw-tags"><span>power</span><span>PCB</span><span>DSP</span></div>
+        </div>
+        <div class="hw-card">
+          <span class="hw-year">2020</span>
+          <div class="hw-name">Multifunctional CNC DC Power Supply</div>
+          <p class="hw-desc">PSpice-simulated analog control, hand-soldered build. First Prize, 26th ZJU "TP-LINK Cup" EDC.</p>
+          <div class="hw-tags"><span>analog</span><span>PSpice</span></div>
+        </div>
+        <div class="hw-card">
+          <span class="hw-year">2020</span>
+          <div class="hw-name">Harmonic Distortion Analyzer</div>
+          <p class="hw-desc">The TI Cup build: precision analog front end + DSP analysis for amplifier nonlinearity measurement.</p>
+          <div class="hw-tags"><span>analog</span><span>measurement</span></div>
+        </div>
+        <div class="hw-card">
+          <span class="hw-year">2019</span>
+          <div class="hw-name">Conveyor-Belt Inspection + 4-DoF Manipulator</div>
+          <p class="hw-desc">Visual defect inspection (RPi + OV5647), IR temperature and ToF thickness sensing, STM32 control, PWM belt drive, electromagnetic pick-and-place.</p>
+          <div class="hw-tags"><span>embedded</span><span>vision</span></div>
+        </div>
+        <div class="hw-card">
+          <span class="hw-year">2020</span>
+          <div class="hw-name">GPU-Accelerated VIO Front End</div>
+          <p class="hw-desc">FAST + LK optical flow on CUDA, running on a Jetson TX2 for drone visual-inertial odometry.</p>
+          <div class="hw-tags"><span>CUDA</span><span>SLAM</span><span>Jetson</span></div>
+        </div>
+        <div class="hw-card">
+          <span class="hw-year">2020–21</span>
+          <div class="hw-name">600 V/1 MHz Vertical GaN Device Study</div>
+          <p class="hw-desc">Dynamic on-resistance measurement of vertical GaN power devices, with Prof. Shu Yang — trapped-charge and p-GaN hole-injection mechanisms.</p>
+          <div class="hw-tags"><span>power devices</span><span>GaN</span></div>
+        </div>
+        <div class="hw-card">
+          <span class="hw-year">2019</span>
+          <div class="hw-name">FPGA Multifunctional Digital Clock</div>
+          <p class="hw-desc">Digital system design from scratch on an Intel MAX10 (MAX10M08SCM153C8G).</p>
+          <div class="hw-tags"><span>FPGA</span><span>digital</span></div>
+        </div>
+        <div class="hw-card">
+          <span class="hw-year">2020</span>
+          <div class="hw-name">PV Grid-Tied Inverter, Anti-Harmonic Loop</div>
+          <p class="hw-desc">DC-AC switching design and closed-loop anti-harmonic control, designed and simulated in MATLAB/Simulink (THD 3.3%).</p>
+          <div class="hw-tags"><span>power electronics</span><span>control</span></div>
+        </div>
+      </div>
+
+      <blockquote class="term reveal">
+        99% of hardware debugging is problem positioning — and the Replacement Method is always the fastest path.
+        This is not metaphysics: every "sometimes it works" has a reason.
+        <span class="who">— field notes #1 &amp; #4</span>
+      </blockquote>
+
+      <p class="fieldnotes reveal">
+        Deep dives:
+        <a href="https://docs.google.com/presentation/d/14xKQ7TOXMGIto67Wjm3egiEDtMc3ec78lmo5LbAER48/edit?usp=sharing" target="_blank" rel="noopener">hardware project deck ↗</a> ·
+        <a href="https://docs.google.com/document/d/1G0XCl3qhxFjbw7GRci1baJuRYO-daQAmSX9vOScSf6w/edit?usp=sharing" target="_blank" rel="noopener">debugging field notes &amp; fabrication guide ↗</a>
+      </p>
+    </section>
+
+    <!-- 06 · experience -->
+    <section id="experience">
+      <h2 class="sec-title reveal"><span class="no">05</span>Experience &amp; Education</h2>
+
+      <div class="xp reveal">
+        <div class="xp-row">
+          <div class="xp-logo"><img src="assets/img/logo-amazon.png" alt="Amazon"></div>
+          <div class="xp-body">
+            <div class="xp-top">
+              <span class="xp-role">Research Scientist Intern</span>
+              <span class="xp-date">May 2026 – present</span>
+            </div>
+            <div class="xp-org">Amazon Frontier AI &amp; Robotics · San Francisco, CA</div>
+          </div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-logo"><span class="logo-chip">UCSD</span></div>
+          <div class="xp-body">
+            <div class="xp-top">
+              <span class="xp-role">Junior Specialist · Research Scholar</span>
+              <span class="xp-date">Aug 2023 – Dec 2024</span>
+            </div>
+            <div class="xp-org">Su Lab, UC San Diego — advisor: <a href="https://cseweb.ucsd.edu/~haosu/" target="_blank" rel="noopener">Prof. Hao Su</a></div>
+            <div class="xp-note">Led the particle-based world model project; built 3 complete robot systems; lab hardware lead from Nov 2023.</div>
+          </div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-logo"><span class="logo-chip">ZJU</span></div>
+          <div class="xp-body">
+            <div class="xp-top">
+              <span class="xp-role">Ph.D., Computer Science</span>
+              <span class="xp-date">Sep 2021 – 2026 (exp.)</span>
+            </div>
+            <div class="xp-org">State Key Lab of CAD&amp;CG, Zhejiang University — advisor: <a href="http://www.cad.zju.edu.cn/home/gfzhang/" target="_blank" rel="noopener">Prof. Guofeng Zhang</a></div>
+            <div class="xp-note">3D vision (dynamic scene reconstruction) → 3D-prior-guided robot manipulation learning.</div>
+          </div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-logo"><span class="logo-chip">ZJU</span></div>
+          <div class="xp-body">
+            <div class="xp-top">
+              <span class="xp-role">B.Sc., Electrical &amp; Electronics Engineering</span>
+              <span class="xp-date">Sep 2017 – Jun 2021</span>
+            </div>
+            <div class="xp-org">Zhejiang University — <b>rank 1/48</b></div>
+            <div class="xp-note">EE Excellence Program: six days a week in the hardware design &amp; debugging laboratory, building embedded systems from scratch.</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-size:1.05rem; margin:26px 0 6px;">Awards</h3>
+      <ul class="awards reveal">
+        <li><span class="star">★</span><span><b>TI Cup (highest award)</b> — Championship, 8th TI National Undergraduate Electronic Design Competition · rank 1/1847</span><span class="yr">2020</span></li>
+        <li><span class="star">★</span><span><b>First Prize</b> — 26th Zhejiang University "TP-LINK Cup" Undergraduate Electronic Design Competition</span><span class="yr">2020</span></li>
+      </ul>
+    </section>
+
+    <!-- 07 · contact -->
+    <section id="contact">
+      <h2 class="sec-title reveal"><span class="no">06</span>Contact</h2>
+      <div class="contact-grid reveal">
+        <div class="contact-text">
+          <p>
+            The fastest way to reach me is email:
+            <a href="mailto:hzddltql@gmail.com"><b>hzddltql@gmail.com</b></a><br>
+            Also on <a href="https://scholar.google.com/citations?user=ATsuK6IAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            and <a href="https://github.com/hongzhengdong" target="_blank" rel="noopener">GitHub</a>.
+          </p>
+          <p style="color:var(--text-soft); font-size:0.92rem;">
+            Currently in San Francisco; home base Hangzhou, China.
+            Off duty you'll find me up a tea mountain. If you want to talk robots — hardware, learning,
+            or the messy space in between — my inbox is open.
+          </p>
+        </div>
+        <div class="qr-box">
+          <img src="assets/img/tea.jpg" alt="Zhengdong in a Hangzhou tea plantation" style="width:170px">
+          <span>hangzhou, off duty</span>
+        </div>
+        <div class="qr-box">
+          <img src="assets/img/wechat.jpeg" alt="WeChat QR code">
+          <span>wechat</span>
+        </div>
+      </div>
+
+      <footer class="footer">
+        © 2026 Zhengdong Hong · 洪郑栋 — handcrafted with vanilla HTML/CSS/JS, no frameworks.<br>
+        <span>$ uptime → building things with signals since 2017 · <a href="https://github.com/hongzhengdong/hongzhengdong.github.io" target="_blank" rel="noopener">source</a></span>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ right rail · hardware skills ═══════════ -->
+  <aside class="rail" id="rail-right" aria-label="Hardware skills photo rail">
+    <div class="rail-track">
+      <p class="rail-head">hardware — circuits &amp; fab</p>
+      <figure>
+        <img src="assets/img/rail/skl-01-bench.jpg" alt="Electronics workbench with oscilloscope, soldering station, and parts organizer" loading="lazy">
+        <figcaption><span class="idx">SKL/01</span>the EE bench I set up &amp; run at Su Lab</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/skl-02-buck.jpg" alt="Custom DC-DC buck converter PCB wired to a TI C2000 LaunchPad" loading="lazy">
+        <figcaption><span class="idx">SKL/02</span>my 12 V/5 A dual-loop buck — 8×5 cm, DSP-controlled</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/skl-03-analog.jpg" alt="Hand-soldered analog control board with op-amps and relay" loading="lazy">
+        <figcaption><span class="idx">SKL/03</span>hand-built analog control board — op-amps, relay, trimmers</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/skl-04-scope.jpg" alt="SIGLENT oscilloscope with probes on a wooden bench" loading="lazy">
+        <figcaption><span class="idx">SKL/04</span>the scope — "signal is the clue"</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/skl-05-solder.jpg" alt="Soldering iron in stand with parts drawers behind" loading="lazy">
+        <figcaption><span class="idx">SKL/05</span>fabrication station — soldering &amp; rework</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/rail/skl-06-psu-box.jpg" alt="CNC DC power supply system under test" loading="lazy">
+        <figcaption><span class="idx">SKL/06</span>CNC DC power supply, full-system test — TP-LINK Cup, 1st prize</figcaption>
+      </figure>
+    </div>
+  </aside>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
