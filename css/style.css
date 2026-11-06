@@ -459,6 +459,8 @@ blockquote.term .who { display: block; margin-top: 4px; color: var(--text-faint)
   box-shadow: var(--shadow);
 }
 .pub-thumb img { display: block; width: 100%; height: auto; }
+.pub-thumb--lamp img { max-width: none; width: 102.67%; margin-left: -1.23%; }
+.pub-thumb--easyhec img { max-width: none; width: 105.2632%; margin-left: -0.8421%; }
 
 .pub-title { font-size: 1.08rem; font-weight: 700; line-height: 1.35; margin: 0 0 5px; color: var(--text); }
 .pub-title a { color: inherit; }
