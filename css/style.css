@@ -494,6 +494,8 @@ blockquote.term .who { display: block; margin-top: 4px; color: var(--text-faint)
   padding: 2px 8px;
 }
 .pub-links a:hover { border-color: var(--accent-border); background: var(--accent-soft); text-decoration: none; }
+.pub-links a.hot { color: var(--hot); border-color: var(--hot); }
+.pub-links a.hot:hover { background: var(--hot-soft); }
 
 details.tldr { margin-top: 2px; }
 details.tldr summary {
